@@ -9,6 +9,7 @@ import Register from './pages/Register.jsx'
 import CandidateDashboard from './pages/CandidateDashboard.jsx'
 
 import { Toaster } from './components/ui/toaster'
+import ForgotPassword from './pages/ForgotPassword'
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
   {
     path: '/candidate-dashboard',
     element: <CandidateDashboard />
+  }
+  ,
+  {
+    path: '/forgot-password',
+    element: <ForgotPassword />
   }
 ])
 

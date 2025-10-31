@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -82,9 +83,9 @@ export default function LoginPage() {
         </form>
 
         <div className="text-center mt-6">
-          <a href="#" className="text-sm text-gray-600 hover:text-blue-600 hover:underline">
+          <Link to={'/forgot-password'} className="text-sm text-gray-600 hover:text-blue-600 hover:underline">
             Forgot password?
-          </a>
+          </Link>
         </div>
       </div>
     </div>
